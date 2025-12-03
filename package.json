@@ -1,0 +1,25 @@
+{
+  "name": "korean-exam-chatbot",
+  "version": "1.0.0",
+  "description": "한국 대학입시 정보 제공 챗봇 서비스",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "dev:all": "concurrently \"npm run dev\" \"npm run client\""
+  },
+  "keywords": ["chatbot", "korean", "university", "admissions", "입시"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "concurrently": "^8.0.1"
+  }
+}
